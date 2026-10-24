@@ -1,0 +1,110 @@
+{
+  "schema": "psa-dyna-research-state/v1",
+  "generated_date": "2026-10-24",
+  "repository": "https://github.com/lyullee/psa-dyna",
+  "package": "https://pypi.org/project/psa-dyna/0.1.0/",
+  "concept_doi": "10.5281/zenodo.23608231",
+  "release_doi": "10.5281/zenodo.23608232",
+  "software_version": "0.1.0",
+  "overall_status": "engine_released_research_claims_partially_qualified",
+  "public_claim": "A physics-based dynamic PSA/VPSA engine with a passed figure-level Wang H2-rich single-bed breakthrough comparison; no validated industrial cyclic design is claimed.",
+  "completed": [
+    "portable_nonisothermal_multicomponent_engine",
+    "four_and_eight_step_schedule_contracts",
+    "restartable_hash_bound_execution",
+    "mass_and_energy_ledgers",
+    "full_state_css_metric",
+    "independent_case_parallel_dispatch",
+    "fail_closed_release_filter",
+    "guarded_dwsim_mean_stream_contract",
+    "pypi_github_zenodo_release"
+  ],
+  "evidence_tracks": {
+    "wang_h2_single_bed": {
+      "state": "passed_figure_level",
+      "source_doi": "10.1016/j.cej.2023.144920",
+      "parameter_refit_in_validation": false,
+      "limits_and_metrics_file": "validation/validation_summary.json",
+      "downstream_release": false
+    },
+    "s015_hydrogen_candidate": {
+      "state": "numerical_screen_design_closed",
+      "n512_ordinary_css": true,
+      "scalar_gci_128_256_512": true,
+      "terminal_thermal_profile_gate": false,
+      "exact_material_gate": false,
+      "plant_thermal_gate": false,
+      "compressor_pipe_valve_gate": false,
+      "public_cyclic_validation_gate": false,
+      "target_h2_kg_h": 103.8761105859462,
+      "calculated_h2_kg_h": 101.96248526041114,
+      "h2_purity": 0.8897557057906075,
+      "design_release": false
+    },
+    "boer_biogas_vpsa": {
+      "state": "blocked_apparatus_response_not_identifiable",
+      "completed_screen_cases": 18,
+      "best_profile_rmse_c_over_c0": 0.008315732901405035,
+      "minimum_relative_t05_error": 0.08576021706439974,
+      "predeclared_relative_t05_limit": 0.05,
+      "post_hoc_apparatus_fit_authorized": false
+    },
+    "independent_nonisothermal": {
+      "state": "candidate_sources_only",
+      "candidate_families": [
+        "CALF-20",
+        "NASA pressure-temperature transient data"
+      ],
+      "validated": false
+    },
+    "dwsim_bridge": {
+      "state": "implemented_release_closed",
+      "automatic_transfer_allowed": false
+    }
+  },
+  "release_flags": {
+    "source_dynamic_validation": false,
+    "design": false,
+    "dwsim": false,
+    "tea_lca": false,
+    "optimization": false,
+    "training": false
+  },
+  "next_actions_in_order": [
+    {
+      "priority": 1,
+      "action": "obtain_or_identify_independent_cyclic_h2_dataset",
+      "done_when": "A source-complete dataset is frozen and calibration/holdout metrics are preregistered."
+    },
+    {
+      "priority": 2,
+      "action": "run_fixed_model_cyclic_h2_validation",
+      "done_when": "All declared transient, integral, conservation, CSS and resolution gates pass without holdout refitting."
+    },
+    {
+      "priority": 3,
+      "action": "qualify_s015_material_thermal_hydraulic_and_target_gates",
+      "done_when": "Exact adsorbent, plant heat transfer, compressor/pipe/valve and product gates pass."
+    },
+    {
+      "priority": 4,
+      "action": "validate_independent_nonisothermal_pressure_temperature_response",
+      "done_when": "A source-isolated CALF-20 or NASA case passes preregistered pressure and temperature metrics."
+    },
+    {
+      "priority": 5,
+      "action": "open_dwsim_bridge_only_after_upstream_gates",
+      "done_when": "The release filter returns an explicit boolean true for DWSIM."
+    }
+  ],
+  "non_negotiable_rules": [
+    "Do not mix parameters across adsorbents, gas systems or papers.",
+    "Do not infer cyclic validation from a breakthrough comparison.",
+    "Do not infer design qualification from CSS or GCI.",
+    "Do not refit a holdout or an unpublished apparatus response.",
+    "Do not use paused, failed or unconverged runs as training truth.",
+    "Do not weaken a frozen gate after seeing results.",
+    "Do not commit copyrighted or proprietary source artifacts without permission."
+  ]
+}
+

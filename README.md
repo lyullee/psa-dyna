@@ -204,6 +204,16 @@ PSA-Dyna/
 └── .github/workflows/     continuous integration
 ```
 
+## Resume the research
+
+The repository includes a session-independent research handoff. A new
+researcher or coding agent should start with
+[`docs/research-handoff.md`](docs/research-handoff.md), then read the
+machine-readable [`docs/research-state.json`](docs/research-state.json). These
+records distinguish completed implementation work from open experimental and
+plant-design gates, preserve negative results, and identify the next scientific
+task.
+
 ## Documentation
 
 - [Getting started](docs/getting-started.md)
@@ -214,6 +224,17 @@ PSA-Dyna/
 - [Known limitations](docs/limitations.md)
 - [References](docs/references.md)
 - [Data and copyright policy](docs/data-policy.md)
+- [Research handoff](docs/research-handoff.md)
+- [Machine-readable research state](docs/research-state.json)
+- [Development history](docs/development-history.md)
+- [Decision log](docs/decision-log.md)
+- [Known issues and failed approaches](docs/known-issues.md)
+- [Reproducibility runbook](docs/reproducibility-runbook.md)
+- [Validation playbook](docs/validation-playbook.md)
+- [Research roadmap](docs/roadmap.md)
+- [Future-session bootstrap prompt](docs/future-session-prompt.md)
+- [Code and artifact map](docs/code-map.md)
+- [Changelog](CHANGELOG.md)
 
 ## Data and copyright
 
