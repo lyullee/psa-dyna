@@ -1,0 +1,57 @@
+{
+  "schema": "psa-dyna-s015-minimum-applicability/v1",
+  "generated_date": "2026-10-24",
+  "status": "minimum_supplement_complete_screening_only",
+  "accepted_n512_5a_envelope": {
+    "temperature_min_k": 293.1499999999994,
+    "temperature_max_k": 368.58693863085114,
+    "total_pressure_min_bar": 1.0999999999975876,
+    "total_pressure_max_bar": 15.14068667649787,
+    "accepted_cell_time_samples": 210172,
+    "extrema_are_marginal_not_joint": true
+  },
+  "adsorbent_applicability": {
+    "active_species": ["H2", "CO2", "CH4", "CO"],
+    "closest_direct_quaternary_source": {
+      "doi": "10.1021/acs.jced.6b00312",
+      "temperature_points_k": [298.15, 308.15, 318.15],
+      "total_pressure_range_bar": [1.0, 18.0],
+      "s015_feed_total_variation_from_reported_nominal": 0.10664799548967738,
+      "exact_ahn_grade_equivalence": false
+    },
+    "hot_scope_anchor": {
+      "doi": "10.1016/0009-2509(90)80179-I",
+      "temperature_points_k": [298.0, 373.0],
+      "mixture_total_pressure_points_bar": [14.755, 21.6495],
+      "replayable_exact_four_component_public_table": false,
+      "exact_ahn_grade_equivalence": false
+    },
+    "lower_temperature_screening_support_k": [298.15, 318.15],
+    "hot_mixture_extrapolation_k": [318.15, 368.58693863085114],
+    "whole_trajectory_exact_grade_qualified": false,
+    "cyclic_kinetics_qualified": false
+  },
+  "thermal_applicability": {
+    "bed_diameter_m": 1.5,
+    "particle_diameter_m": 0.00276,
+    "tube_to_particle_diameter_ratio": 543.4782608695652,
+    "bed_k_w_m_k": 0.24,
+    "implemented_h_bed_wall_w_m2_k": 0.32,
+    "implemented_value_equals_k_over_radius": true,
+    "radial_temperature_model": "lumped_1d_axial",
+    "n256_to_n512_gas_temperature_rms_k": 1.3467656298851187,
+    "n256_to_n512_wall_temperature_rms_k": 1.482860804126821,
+    "frozen_limit_k": 1.0,
+    "plant_thermal_qualified": false
+  },
+  "decision": {
+    "minimum_literature_domain_screen_complete": true,
+    "new_long_css_run_required_for_this_screen": false,
+    "software_model_paper_screening_claim_allowed": true,
+    "plant_design_claim_allowed": false,
+    "dwsim_design_bridge_allowed": false,
+    "tea_lca_release_allowed": false,
+    "optimization_release_allowed": false
+  },
+  "copyright_boundary": "Derived metrics and bibliographic identifiers only; publisher figures, PDFs and restricted numerical tables are excluded."
+}

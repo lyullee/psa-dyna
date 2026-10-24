@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added the S-015 minimum adsorbent and heat-transfer applicability supplement.
+- Published copyright-safe N512 operating-envelope and evidence-boundary metrics.
+- Documented why additional long CSS computation cannot replace missing exact-material or plant-thermal evidence.
+
 All notable public changes are recorded here.
 
 ## Unreleased

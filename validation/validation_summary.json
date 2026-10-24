@@ -52,6 +52,11 @@
       "calculated_h2_kg_h": 101.96248526041114,
       "target_relative_error": -0.01842218884342739,
       "h2_purity": 0.8897557057906075,
+      "minimum_applicability_screen_complete": true,
+      "accepted_5a_temperature_range_k": [293.1499999999994, 368.58693863085114],
+      "accepted_5a_total_pressure_range_bar": [1.0999999999975876, 15.14068667649787],
+      "exact_adsorbent_grade_qualified": false,
+      "plant_thermal_qualified": false,
       "plant_design_eligible": false
     },
     "boer_2024_biogas_vpsa": {

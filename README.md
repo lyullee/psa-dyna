@@ -152,6 +152,8 @@ The current public claim is deliberately narrow.
 For the exact metrics and interpretation, read [Validation evidence and claim
 boundaries](docs/validation.md). A machine-readable, copyright-safe summary is
 provided in [`validation/validation_summary.json`](validation/validation_summary.json).
+The adsorbent and heat-transfer scope of the S-015 candidate is documented in
+the [minimum applicability supplement](docs/s015-minimum-applicability.md).
 
 ## DWSIM interface
 
