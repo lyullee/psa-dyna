@@ -1,0 +1,235 @@
+{
+  "schema": "dynamic-psa-case/v1",
+  "case_id": "wang_equalized_8step_2cell",
+  "species": [
+    {
+      "name": "H2",
+      "mw_kg_mol": 0.00201588,
+      "cp_j_mol_k": 28.84
+    },
+    {
+      "name": "CH4",
+      "mw_kg_mol": 0.0160425,
+      "cp_j_mol_k": 35.69
+    },
+    {
+      "name": "N2",
+      "mw_kg_mol": 0.0280134,
+      "cp_j_mol_k": 29.12
+    },
+    {
+      "name": "CO2",
+      "mw_kg_mol": 0.0440095,
+      "cp_j_mol_k": 37.13
+    }
+  ],
+  "bed": {
+    "n_cells": 2,
+    "length_m": 1.07,
+    "diameter_m": 0.02118,
+    "void_fraction": 0.337,
+    "pellet_void_fraction": 0.65,
+    "bulk_density_kg_m3": 470.0,
+    "particle_diameter_m": 0.00276,
+    "solid_cp_j_kg_k": 1046.0,
+    "bed_k_w_m_k": 0.24,
+    "wall_thickness_m": 0.00211,
+    "wall_density_kg_m3": 7850.0,
+    "wall_cp_j_kg_k": 460.0,
+    "wall_k_w_m_k": 10.9,
+    "h_bed_wall_w_m2_k": 22.662889518413596,
+    "h_ambient_w_m2_k": 0.006,
+    "ambient_k": 293.95,
+    "kinetics": "partial_pressure_ldf",
+    "energy_mode": "source_sensible",
+    "materials": [
+      {
+        "name": "Wang2023_RB3_C1",
+        "end_fraction": 1.0,
+        "material_grade": "Norit RB3 (Sigma-Aldrich)",
+        "a1": [
+          [
+            2.97,
+            0
+          ],
+          [
+            4.56,
+            2.3
+          ],
+          [
+            2.26,
+            0
+          ],
+          [
+            0.75,
+            7.69
+          ]
+        ],
+        "b0_per_bar": [
+          [
+            0.000237,
+            0
+          ],
+          [
+            3.03e-05,
+            0.000677
+          ],
+          [
+            0.000267,
+            0
+          ],
+          [
+            4.19e-05,
+            3.5e-05
+          ]
+        ],
+        "binding_energy_j_mol": [
+          [
+            9540,
+            0
+          ],
+          [
+            18570,
+            16860
+          ],
+          [
+            16360,
+            0
+          ],
+          [
+            29990,
+            22380
+          ]
+        ],
+        "ldf_per_s": [
+          2,
+          3,
+          3,
+          1
+        ],
+        "experimental_fit_domain": {
+          "temperature_k": [
+            273.15,
+            333.15
+          ],
+          "component_partial_pressure_bar": {
+            "H2": [
+              0.0,
+              7.0
+            ],
+            "CH4": [
+              0.0,
+              12.0
+            ],
+            "N2": [
+              0.0,
+              1.2
+            ],
+            "CO2": [
+              0.0,
+              1.2
+            ]
+          },
+          "measured_temperature_k": {
+            "H2": [
+              273.15,
+              303.15,
+              333.15
+            ],
+            "CH4": [
+              273.15,
+              303.15,
+              333.15
+            ],
+            "N2": [
+              273.15,
+              293.15,
+              313.15,
+              333.15
+            ],
+            "CO2": [
+              273.15,
+              293.15,
+              313.15,
+              333.15
+            ]
+          },
+          "source": "10.1016/j.cej.2023.144920",
+          "locator": "Article Sections 2.1 and 3.1, Figure 5 and Table 3",
+          "material_grade": "Norit RB3 (Sigma-Aldrich)",
+          "components": [
+            "H2",
+            "CH4",
+            "N2",
+            "CO2"
+          ],
+          "equilibrium_model": "dual_site_langmuir",
+          "pressure_basis": "pure_component_partial_pressure"
+        }
+      }
+    ]
+  },
+  "feed": {
+    "mole_fractions": [
+      0.58,
+      0.29,
+      0.07,
+      0.06
+    ],
+    "temperature_k": 313.65,
+    "pressure_bar": 5.17,
+    "molar_flow_mol_s": 0.001932666666666667
+  },
+  "high_pressure_bar": 5.17,
+  "low_pressure_bar": 0.11,
+  "product_pressure_bar": 5.17,
+  "initial_pressure_bar": 0.11,
+  "purge_to_feed_ratio": 0.0077,
+  "purge_gain_mol_s_bar": 100.0,
+  "boundary_mode": "wang_controller",
+  "valve_regularization_bar": 1e-06,
+  "valves": {
+    "feed": {
+      "taper_band_bar": 0.35
+    },
+    "product": {
+      "gain_mol_s_bar": 0.02
+    },
+    "tail": {
+      "gain_mol_s_bar": 0.01
+    },
+    "equalization": {
+      "gain_mol_s_sqrt_bar": 0.003
+    }
+  },
+  "schedule": {
+    "name": "equalized_8step",
+    "slot_s": 120.0,
+    "reported_breakthrough_duration_s": 1600.0
+  },
+  "solver": {
+    "rtol": 2e-07,
+    "max_step_s": 8.0,
+    "maximum_cycles": 150,
+    "minimum_cycles": 3,
+    "css_tolerance": 0.0001,
+    "css_consecutive_cycles": 3,
+    "mass_balance_tolerance": 1e-05,
+    "energy_balance_tolerance": 1e-05
+  },
+  "provenance": {
+    "doi": "10.1016/j.cej.2023.144920",
+    "material_basis": "Table3/S3",
+    "geometry_basis": "Tables1/2",
+    "boundary_closures": [
+      "valve gains",
+      "bed-wall h=k/r",
+      "equal-slot timing"
+    ],
+    "energy_mode": "Published solid-dominated thermal closure; gas internal-energy terms omitted explicitly.",
+    "cycle_feed_temperature_basis": "Main article Table 4 Run XII AD-flow cell: 2.6 SLPM (40.5 degC); modeled as bed-inlet gas T, but measurement location is not stated.",
+    "cycle_feed_temperature_location_verified": false,
+    "cycle_feed_basis": "adsorption_active_bed"
+  },
+  "claim": "Source-apparatus reproduction, not validation of S-015 design."
+}

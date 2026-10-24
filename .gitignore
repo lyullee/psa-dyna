@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.venv/
+venv/
+build/
+dist/
+results/
+runs/
+*.lock
+checkpoint.state.*.npz
+active_step.json
+.idea/
+.vscode/
+.DS_Store

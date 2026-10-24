@@ -1,0 +1,68 @@
+{
+  "schema": "psa-dyna-public-validation-summary/v1",
+  "generated_date": "2026-10-24",
+  "software_version": "0.1.0",
+  "tracks": {
+    "wang_h2_single_bed_breakthrough": {
+      "source_doi": "10.1016/j.cej.2023.144920",
+      "status": "figure_level_comparison_passed",
+      "parameter_fitting_in_validation_workflow": false,
+      "mesh_cells": [16, 32, 64],
+      "maximum_time_steps_s": [8.0, 4.0],
+      "spatial_refinement": {
+        "comparison": "32_to_64_cells_at_8_s",
+        "maximum_outlet_rmse": 0.003523312201640461,
+        "maximum_temperature_rmse_k": 0.30264600398954694,
+        "limits": {
+          "maximum_outlet_rmse": 0.01,
+          "maximum_temperature_rmse_k": 0.5
+        },
+        "pass": true
+      },
+      "temporal_refinement": {
+        "comparison": "64_cells_8_s_to_4_s",
+        "maximum_outlet_rmse": 1.4351298112157225e-08,
+        "maximum_temperature_rmse_k": 1.917324072396233e-06,
+        "limits": {
+          "maximum_outlet_rmse": 0.01,
+          "maximum_temperature_rmse_k": 0.5
+        },
+        "pass": true
+      },
+      "conservation": {
+        "mass_balance_limit": 1e-05,
+        "energy_balance_limit": 1e-05,
+        "pass": true
+      },
+      "release_flags": {
+        "single_bed_figure_level_validation": true,
+        "raw_historian_equivalence": false,
+        "cyclic_vpsa_validation": false,
+        "plant_design": false,
+        "dwsim": false,
+        "tea_lca": false,
+        "training": false
+      }
+    },
+    "s015_hydrogen_psa_candidate": {
+      "status": "numerical_design_screen_only",
+      "ordinary_css_at_512_cells": true,
+      "scalar_gci_128_256_512": true,
+      "target_h2_kg_h": 103.8761105859462,
+      "calculated_h2_kg_h": 101.96248526041114,
+      "target_relative_error": -0.01842218884342739,
+      "h2_purity": 0.8897557057906075,
+      "plant_design_eligible": false
+    },
+    "boer_2024_biogas_vpsa": {
+      "status": "public_cycle_validation_blocked",
+      "completed_apparatus_screen_cases": 18,
+      "eligible_cases": 0,
+      "best_profile_rmse_c_over_c0": 0.008315732901405035,
+      "minimum_relative_t05_error": 0.08576021706439974,
+      "predeclared_relative_t05_error_limit": 0.05,
+      "reason": "Public information does not identify the IR-reservoir and apparatus response required by the early-rise gate."
+    }
+  },
+  "copyright_boundary": "Derived metrics only. Publisher figures, PDFs and restricted raw data are excluded."
+}

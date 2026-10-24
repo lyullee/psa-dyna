@@ -1,0 +1,46 @@
+{
+  "schema": "dynamic-psa-source-replay-case/v1",
+  "case_id": "REPLACE_WITH_SOURCE_CASE_ID",
+  "source": {
+    "doi": "REPLACE_WITH_DOI",
+    "citation": "REPLACE_WITH_FULL_CITATION",
+    "data_path": "data/source_raw_file.csv",
+    "data_sha256": "REPLACE_WITH_UPPERCASE_SHA256",
+    "claim_scope": "Source-matched breakthrough or cyclic replay only; not an S-015 transfer.",
+    "material_transfer_allowed": false
+  },
+  "components": [
+    {"name": "H2", "molecular_weight_kg_mol": null, "cp_j_mol_k": null},
+    {"name": "CO", "molecular_weight_kg_mol": null, "cp_j_mol_k": null}
+  ],
+  "feed_mole_fractions": {"H2": null, "CO": null},
+  "bed": {
+    "length_m": null,
+    "diameter_m": null,
+    "void_fraction": null,
+    "layers": [
+      {
+        "name": "source_layer_1",
+        "material_source": "REPLACE_WITH_EXACT_GRADE_AND_LOCATOR",
+        "end_fraction": null,
+        "equilibrium": {"model": "REPLACE_WITH_SOURCE_MODEL", "source": "REPLACE_WITH_LOCATOR"},
+        "kinetics": {"model": "REPLACE_WITH_SOURCE_MODEL", "source": "REPLACE_WITH_LOCATOR"}
+      }
+    ]
+  },
+  "boundary": {
+    "pressure_bar": null,
+    "temperature_k": null,
+    "molar_flow_mol_s": null,
+    "pressure_drop_model": "REPLACE_WITH_SOURCE_CORRELATION"
+  },
+  "observations": [
+    {
+      "path": "data/observed_breakthrough.csv",
+      "sha256": "REPLACE_WITH_UPPERCASE_SHA256",
+      "kind": "breakthrough",
+      "columns": ["time_s", "outlet_H2_mole_fraction"],
+      "units": {"time_s": "s", "outlet_H2_mole_fraction": "1"}
+    }
+  ]
+}

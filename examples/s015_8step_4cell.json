@@ -1,0 +1,313 @@
+{
+  "schema": "dynamic-psa-case/v1",
+  "case_id": "S015_dry_equalized_8step_4cell",
+  "species": [
+    {
+      "name": "H2",
+      "mw_kg_mol": 0.00201588,
+      "cp_j_mol_k": 28.84
+    },
+    {
+      "name": "CO2",
+      "mw_kg_mol": 0.0440095,
+      "cp_j_mol_k": 37.13
+    },
+    {
+      "name": "CH4",
+      "mw_kg_mol": 0.0160425,
+      "cp_j_mol_k": 35.69
+    },
+    {
+      "name": "CO",
+      "mw_kg_mol": 0.0280101,
+      "cp_j_mol_k": 29.14
+    },
+    {
+      "name": "N2",
+      "mw_kg_mol": 0.0280134,
+      "cp_j_mol_k": 29.12
+    }
+  ],
+  "bed": {
+    "n_cells": 4,
+    "length_m": 1.5,
+    "diameter_m": 1.5,
+    "void_fraction": 0.433,
+    "pellet_void_fraction": 0.0,
+    "bulk_density_kg_m3": 295.974,
+    "particle_diameter_m": 0.00276,
+    "solid_cp_j_kg_k": 1046.0,
+    "bed_k_w_m_k": 0.24,
+    "wall_thickness_m": 0.00211,
+    "wall_density_kg_m3": 7850.0,
+    "wall_cp_j_kg_k": 460.0,
+    "wall_k_w_m_k": 10.9,
+    "h_bed_wall_w_m2_k": 0.32,
+    "h_ambient_w_m2_k": 0.006,
+    "ambient_k": 310.264937331605,
+    "kinetics": "loading_ldf",
+    "energy_mode": "internal_energy",
+    "materials": [
+      {
+        "name": "Ahn_corrected_AC",
+        "end_fraction": 0.65,
+        "a1": [
+          [
+            16.943
+          ],
+          [
+            28.7973
+          ],
+          [
+            23.86
+          ],
+          [
+            33.85
+          ],
+          [
+            1.6441
+          ]
+        ],
+        "a2": [
+          [
+            0.021
+          ],
+          [
+            0.07
+          ],
+          [
+            0.05621
+          ],
+          [
+            0.09072
+          ],
+          [
+            0.00073
+          ]
+        ],
+        "b0_per_bar": [
+          [
+            6.166e-05
+          ],
+          [
+            0.0099
+          ],
+          [
+            0.003432
+          ],
+          [
+            0.0002281
+          ],
+          [
+            0.0538
+          ]
+        ],
+        "affinity_energy_j_mol": [
+          [
+            10218.474557522
+          ],
+          [
+            8563.896496540001
+          ],
+          [
+            9636.462174262
+          ],
+          [
+            14558.624044118
+          ],
+          [
+            2710.5148134680003
+          ]
+        ],
+        "binding_energy_j_mol": [
+          [
+            12049.92
+          ],
+          [
+            21924.16
+          ],
+          [
+            17949.36
+          ],
+          [
+            17991.2
+          ],
+          [
+            6945.4400000000005
+          ]
+        ],
+        "ldf_per_s": [
+          0.7,
+          0.0355,
+          0.195,
+          0.15,
+          0.261
+        ]
+      },
+      {
+        "name": "Ahn_corrected_5A",
+        "end_fraction": 1.0,
+        "a1": [
+          [
+            4.314
+          ],
+          [
+            10.03
+          ],
+          [
+            5.833
+          ],
+          [
+            11.8454
+          ],
+          [
+            4.8133
+          ]
+        ],
+        "a2": [
+          [
+            0.0106
+          ],
+          [
+            0.01858
+          ],
+          [
+            0.01192
+          ],
+          [
+            0.0313
+          ],
+          [
+            0.00668
+          ]
+        ],
+        "b0_per_bar": [
+          [
+            0.002482
+          ],
+          [
+            1.5575
+          ],
+          [
+            0.00059716
+          ],
+          [
+            0.0199
+          ],
+          [
+            0.000562
+          ]
+        ],
+        "affinity_energy_j_mol": [
+          [
+            3808.0238790440003
+          ],
+          [
+            1721.093761926
+          ],
+          [
+            14392.334791758001
+          ],
+          [
+            6343.934977534001
+          ],
+          [
+            12729.442268158
+          ]
+        ],
+        "binding_energy_j_mol": [
+          [
+            11715.2
+          ],
+          [
+            39036.72
+          ],
+          [
+            22593.600000000002
+          ],
+          [
+            22175.2
+          ],
+          [
+            22886.48
+          ]
+        ],
+        "ldf_per_s": [
+          0.7,
+          0.0135,
+          0.147,
+          0.063,
+          0.099
+        ]
+      }
+    ],
+    "thermal_closure": {
+      "wall_coefficient_basis": "k_over_radius_screening_heuristic",
+      "reference_lab_diameter_m": 0.02118,
+      "radial_temperature_model": "lumped_1d_axial"
+    }
+  },
+  "feed": {
+    "mole_fractions": [
+      0.7194907705762787,
+      0.2716479954896774,
+      0.0035679332367883816,
+      0.00529330069725549,
+      0.0
+    ],
+    "temperature_k": 310.264937331605,
+    "pressure_bar": 15.6533970226832,
+    "molar_flow_mol_s": 25.1822807772193
+  },
+  "high_pressure_bar": 15.6533970226832,
+  "low_pressure_bar": 1.1,
+  "product_pressure_bar": 15.0,
+  "initial_pressure_bar": 1.1,
+  "purge_to_feed_ratio": 0.05,
+  "purge_gain_mol_s_bar": 10.0,
+  "boundary_mode": "compressible_valve",
+  "valve_regularization_bar": 0.0001,
+  "valves": {
+    "feed": {
+      "area_cd_m2": 0.0002
+    },
+    "product": {
+      "area_cd_m2": 0.0002
+    },
+    "tail": {
+      "area_cd_m2": 0.0004
+    },
+    "equalization": {
+      "area_cd_m2": 0.0002
+    }
+  },
+  "schedule": {
+    "name": "equalized_8step",
+    "slot_s": 30.0
+  },
+  "solver": {
+    "rtol": 2e-07,
+    "max_step_s": 8.0,
+    "maximum_cycles": 150,
+    "minimum_cycles": 3,
+    "css_tolerance": 0.0001,
+    "css_consecutive_cycles": 3,
+    "mass_balance_tolerance": 1e-05,
+    "energy_balance_tolerance": 1e-05,
+    "jacobian_relative_step": 1e-10
+  },
+  "provenance": {
+    "feed": "selected-feed forward DWSIM S-015, 2026-10-14",
+    "feed_water_mole_fraction_removed": 0.0039524105,
+    "material": "Ahn et al. research article DOI 10.1016/j.ces.2011.09.053 with its corrigendum DOI 10.1016/j.ces.2013.06.043; the corrigendum corrects the original Table 2 heat unit to cal/mol. Independent heat is converted with 4.184 J/cal; Affinity retains exp(k4/T).",
+    "engineering_assumptions": [
+      "bed diameter/length",
+      "valve areas",
+      "layer split",
+      "wall coefficient k/r recalculated for 1.5 m diameter; geometry-consistent heuristic only, not validated radial heat transfer",
+      "other thermal properties inherited as screening values"
+    ],
+    "water_guard": "Dry-feed design boundary. Water adsorption and guard regeneration/sizing remain separate."
+  },
+  "claim": "Literature-parameterized S-015 design screen; not a source-matched experiment or rated vessel."
+}

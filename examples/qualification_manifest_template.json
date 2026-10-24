@@ -1,0 +1,16 @@
+{
+  "schema": "dynamic-psa-qualification-manifest/v1",
+  "case_input_sha256": "REPLACE_WITH_EXACT_CASE_INPUT_SHA256",
+  "result_sha256": "REPLACE_WITH_EXACT_RESULT_JSON_SHA256",
+  "engine_snapshot_sha256": "REPLACE_WITH_EXACT_SOURCE_CODE_ZIP_SHA256",
+  "spatial_resolution_pass": false,
+  "temporal_resolution_pass": false,
+  "external_source_validation_pass": false,
+  "material_domain_pass": false,
+  "engineering_evidence_pass": false,
+  "enthalpy_property_adapter_pass": false,
+  "downstream_pressure_loss_pass": false,
+  "dwsim_application_allowed": false,
+  "training_eligible": false,
+  "note": "Template only. Every hash and gate must be independently evidenced before changing any false value. This file does not authorize DWSIM, design, TEA/LCA, or training use."
+}
