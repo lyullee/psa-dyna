@@ -71,12 +71,13 @@ plant-scale heat transfer, selected compressor/pipe/control-valve behavior,
 fixed-target product performance and independent cyclic experimental data.
 Additional mesh refinement alone cannot close those gaps.
 
-A minimum literature-domain supplement now maps the accepted N512 5A-layer
-trajectory (293.15--368.59 K and 1.10--15.14 bar) against source-specific
+A minimum literature-domain supplement now maps the ordinary-CSS N512
+half-flow 5A-layer trajectory (306.79--323.55 K and 1.15--15.05 bar) against source-specific
 experimental scopes. The closest direct quaternary equilibrium source covers
 298.15--318.15 K and 1--18 bar but does not establish Ahn-grade equivalence.
-The 293.15--298.15 K fringe has only pure-component support, and the hotter
-part of the trajectory remains an explicit extrapolation.
+The hotter part of the CSS trajectory remains an explicit extrapolation. A
+separate nominal-flow, four-cell checkpoint reached 368.59 K but did not
+establish CSS; it is a stress warning rather than an operating envelope.
 The implemented bed-to-wall value is exactly `k_eff/R`, not an independently
 qualified wall coefficient, and the frozen N256-to-N512 gas and wall
 temperature RMS limits are not met. See [S-015 minimum applicability

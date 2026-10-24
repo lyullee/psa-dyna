@@ -6,16 +6,21 @@ It does not change model parameters or relax any previously declared gate.
 
 ## Accepted operating envelope
 
-The accepted-node envelope from the ordinary N512 branch is:
+The accepted-node envelope from the ordinary-CSS N512, half-flow branch is:
 
 | Quantity | Minimum | Maximum |
 |---|---:|---:|
-| 5A-layer temperature | 293.15 K | 368.59 K |
-| 5A-layer total pressure | 1.10 bar | 15.14 bar |
+| 5A-layer temperature | 306.79 K | 323.55 K |
+| 5A-layer total pressure | 1.15 bar | 15.05 bar |
 
-These are marginal extrema from 210,172 accepted cell-time samples. The
+These are marginal extrema from 12,640,264 accepted cell-time samples. The
 temperature and pressure extremes need not occur in the same cell at the same
 time.
+
+A separate four-cell, nominal-flow checkpoint reached 368.59 K. It had 31
+completed cycles and stopped after two slots of the following cycle, without a
+CSS result. It is therefore retained as a nominal-flow stress warning, not
+reported as the N512 CSS operating envelope.
 
 ## Adsorbent evidence map
 
@@ -26,8 +31,7 @@ lower-temperature part of the S-015 path. It does not establish equivalence to
 the Ahn commercial 5A, and the S-015 feed differs from the reported nominal
 mixture by a total-variation distance of 0.106648.
 
-The 293.15--298.15 K lower fringe has only pure-component support in the
-screened sources. The 318.15--368.59 K portion remains a hot-mixture
+The 318.15--323.55 K part of the N512 CSS envelope remains a hot-mixture
 extrapolation. Chen et al.
 (`10.1016/0009-2509(90)80179-I`) is a relevant hot/high-pressure
 multicomponent 5A scope anchor, but the public source does not provide a

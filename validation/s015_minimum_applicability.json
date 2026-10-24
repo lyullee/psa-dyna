@@ -2,13 +2,24 @@
   "schema": "psa-dyna-s015-minimum-applicability/v1",
   "generated_date": "2026-10-24",
   "status": "minimum_supplement_complete_screening_only",
-  "accepted_n512_5a_envelope": {
+  "ordinary_css_n512_half_flow_5a_envelope": {
+    "temperature_min_k": 306.78589625880863,
+    "temperature_max_k": 323.54654578386146,
+    "total_pressure_min_bar": 1.1523883043115914,
+    "total_pressure_max_bar": 15.049403053793393,
+    "accepted_cell_time_samples": 12640264,
+    "extrema_are_marginal_not_joint": true
+  },
+  "scale1_n4_interrupted_stress_envelope": {
     "temperature_min_k": 293.1499999999994,
     "temperature_max_k": 368.58693863085114,
     "total_pressure_min_bar": 1.0999999999975876,
     "total_pressure_max_bar": 15.14068667649787,
     "accepted_cell_time_samples": 210172,
-    "extrema_are_marginal_not_joint": true
+    "completed_cycles": 31,
+    "completed_slot_in_current_cycle": 2,
+    "css_established": false,
+    "not_an_operating_envelope": true
   },
   "adsorbent_applicability": {
     "active_species": ["H2", "CO2", "CH4", "CO"],
@@ -26,9 +37,9 @@
       "replayable_exact_four_component_public_table": false,
       "exact_ahn_grade_equivalence": false
     },
-    "lower_temperature_gap_k": [293.1499999999994, 298.15],
-    "lower_temperature_screening_support_k": [298.15, 318.15],
-    "hot_mixture_extrapolation_k": [318.15, 368.58693863085114],
+    "lower_temperature_screening_support_k": [306.78589625880863, 318.15],
+    "hot_mixture_extrapolation_k": [318.15, 323.54654578386146],
+    "scale1_interrupted_stress_warning_k": [318.15, 368.58693863085114],
     "whole_trajectory_exact_grade_qualified": false,
     "cyclic_kinetics_qualified": false
   },
