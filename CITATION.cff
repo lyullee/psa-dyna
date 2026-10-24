@@ -11,6 +11,11 @@ license: MIT
 date-released: 2026-10-24
 repository-code: "https://github.com/lyullee/psa-dyna"
 url: "https://github.com/lyullee/psa-dyna"
+doi: "10.5281/zenodo.23608231"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23608231"
+    description: "Concept DOI resolving to the latest archived software release"
 abstract: >-
   A one-dimensional, non-isothermal, multicomponent dynamic pressure swing
   adsorption and vacuum pressure swing adsorption model for transparent

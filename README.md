@@ -2,6 +2,9 @@
 
 **PSA-Dyna: A Physics-Based Dynamic Pressure Swing Adsorption Model**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23608231.svg)](https://doi.org/10.5281/zenodo.23608231)
+[![PyPI](https://img.shields.io/pypi/v/psa-dyna.svg)](https://pypi.org/project/psa-dyna/)
+
 PSA-Dyna is a Python implementation of a one-dimensional, non-isothermal,
 multicomponent pressure swing adsorption (PSA/VPSA) model. It is intended for
 transparent research, numerical experiments, independent-case generation and
@@ -223,8 +226,10 @@ must obtain any restricted source material from the publisher or author.
 ## Citation
 
 Please cite the archived software release described in [`CITATION.cff`](CITATION.cff).
-The DOI will be added to the main branch after Zenodo completes the first
-release archive. No ORCID is asserted by this repository.
+The concept DOI [`10.5281/zenodo.23608231`](https://doi.org/10.5281/zenodo.23608231)
+resolves to the latest archived version. Release `v0.1.0` is preserved as
+[`10.5281/zenodo.23608232`](https://doi.org/10.5281/zenodo.23608232). No ORCID
+is asserted by this repository.
 
 ## License
 

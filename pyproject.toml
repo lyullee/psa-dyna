@@ -40,6 +40,7 @@ Homepage = "https://github.com/lyullee/psa-dyna"
 Repository = "https://github.com/lyullee/psa-dyna"
 Documentation = "https://github.com/lyullee/psa-dyna/tree/main/docs"
 Issues = "https://github.com/lyullee/psa-dyna/issues"
+Archive = "https://doi.org/10.5281/zenodo.23608231"
 
 [project.optional-dependencies]
 dev = [
