@@ -222,9 +222,9 @@ must obtain any restricted source material from the publisher or author.
 
 ## Citation
 
-Until formal author and DOI metadata are released, cite the repository name,
-version, URL and access date. A `CITATION.cff` file will be added only after
-the author list, affiliations and ORCID identifiers are confirmed.
+Please cite the archived software release described in [`CITATION.cff`](CITATION.cff).
+The DOI will be added to the main branch after Zenodo completes the first
+release archive. No ORCID is asserted by this repository.
 
 ## License
 

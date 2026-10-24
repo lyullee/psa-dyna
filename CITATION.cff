@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived release."
+type: software
+title: "PSA-Dyna: A Physics-Based Dynamic Pressure Swing Adsorption Model"
+authors:
+  - family-names: Lee
+    given-names: Ugwiyeon
+    affiliation: "Korea Gas Safety Corporation"
+version: 0.1.0
+license: MIT
+date-released: 2026-10-24
+repository-code: "https://github.com/lyullee/psa-dyna"
+url: "https://github.com/lyullee/psa-dyna"
+abstract: >-
+  A one-dimensional, non-isothermal, multicomponent dynamic pressure swing
+  adsorption and vacuum pressure swing adsorption model for transparent
+  research, numerical qualification, independent-case generation, and guarded
+  coupling to steady-state process simulators.
