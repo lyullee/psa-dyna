@@ -75,7 +75,8 @@ A minimum literature-domain supplement now maps the accepted N512 5A-layer
 trajectory (293.15--368.59 K and 1.10--15.14 bar) against source-specific
 experimental scopes. The closest direct quaternary equilibrium source covers
 298.15--318.15 K and 1--18 bar but does not establish Ahn-grade equivalence.
-The hotter part of the trajectory therefore remains an explicit extrapolation.
+The 293.15--298.15 K fringe has only pure-component support, and the hotter
+part of the trajectory remains an explicit extrapolation.
 The implemented bed-to-wall value is exactly `k_eff/R`, not an independently
 qualified wall coefficient, and the frozen N256-to-N512 gas and wall
 temperature RMS limits are not met. See [S-015 minimum applicability

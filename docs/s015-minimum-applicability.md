@@ -26,7 +26,9 @@ lower-temperature part of the S-015 path. It does not establish equivalence to
 the Ahn commercial 5A, and the S-015 feed differs from the reported nominal
 mixture by a total-variation distance of 0.106648.
 
-The 318.15--368.59 K portion remains a hot-mixture extrapolation. Chen et al.
+The 293.15--298.15 K lower fringe has only pure-component support in the
+screened sources. The 318.15--368.59 K portion remains a hot-mixture
+extrapolation. Chen et al.
 (`10.1016/0009-2509(90)80179-I`) is a relevant hot/high-pressure
 multicomponent 5A scope anchor, but the public source does not provide a
 replayable exact four-component table or prove equivalence to the Ahn grade.

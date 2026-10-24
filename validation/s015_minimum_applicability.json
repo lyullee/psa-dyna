@@ -26,6 +26,7 @@
       "replayable_exact_four_component_public_table": false,
       "exact_ahn_grade_equivalence": false
     },
+    "lower_temperature_gap_k": [293.1499999999994, 298.15],
     "lower_temperature_screening_support_k": [298.15, 318.15],
     "hot_mixture_extrapolation_k": [318.15, 368.58693863085114],
     "whole_trajectory_exact_grade_qualified": false,
